@@ -1,0 +1,109 @@
+    /* Ajusta el estilo según tus necesidades */
+    .owl-four {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .parallax {
+background-image: url(images/educacion/fondo\ \(2\).png);
+background-size: cover;
+background-position: center ;
+background-repeat: no-repeat;
+
+        background-attachment: fixed;
+        
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.menu-list{
+    background-color: #113897 !important;
+}
+
+/* Puedes agregar más reglas @media para otros tamaños de pantalla si es necesario */
+
+
+
+    .card-info-cards{
+
+    }
+
+    .card-info,.card-info-cards{
+        display: flex;
+    }
+    .card-info-text{
+        width: 70%;
+    }		
+    .card-info-img{
+        margin: auto;
+        width: 50%; 
+        border-radius: 22px;
+    }
+    .card-info-img img{
+        border-radius: 22px;
+    }
+    .read-more-btn{
+        color:#000;
+        border: 1px solid #000;
+        transition: all .6s;
+    }
+
+    .read-more-btn:hover{
+        box-shadow: 1px 0 10px #000;
+        border-radius: 6px;
+        background:#113897;
+        color: #fff;
+        border: transparent;
+        transition: all .6s;
+    }
+    .card-ace{
+        position: absolute; right: 100px; color: #000; border: 1px solid; width: 400px;  background: #fff; margin-top: 200px;
+    }
+    @media (max-width:770px) {
+        .card-info-cards{
+            flex-direction: column;
+        }
+        .card-info-cards-2{
+            flex-direction: column-reverse;
+        }
+        .card-info{
+            flex-direction: column-reverse;
+        }
+        .card-info-text,
+        .card-info-img{
+            width: 100%;
+        }
+        .logo-wrap{
+            width: 80%;
+            height: 80px;
+            margin: -80px;
+            padding-left: 25px;
+        }
+        .subir{
+            margin-top: -90px ;
+            box-shadow: 0 0 10px #000;
+        }
+        .card-ace{
+            width: 300px;
+            right: 15px;
+        }
+
+    }
+    @media (max-width:1000px) {
+        .ace-bann{
+            background-size: 160% !important;
+        }        
+        .img-bann-cards{
+            margin: auto !important;
+            width: 300px;
+            height: 290px !important;
+        }
+    }
+    html, body {
+scroll-behavior: smooth;
+transition: all .5s !important;
+}

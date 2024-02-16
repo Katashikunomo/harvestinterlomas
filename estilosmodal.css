@@ -1,0 +1,400 @@
+
+html{
+    scroll-behavior: smooth !important;
+}
+.mi-clase-boton-confirmar {
+    background-color: #007bff !important;
+    border-radius: 10px !important;
+    color: #FFFFFF !important;
+    box-shadow: 1px 0px 8px #000 !important;
+    }
+    .whatsapp-button-card{
+        position: fixed;
+bottom: -12px;
+left: -15px;
+width: 84px;
+
+z-index: 15;
+background-color: #00b341;
+color: white;
+padding: 12px;
+border-radius: 100%;
+font-size: 20px;
+cursor: pointer;
+box-shadow: 0px 0px 4px #000;
+animation: resp 1s ease infinite;
+
+    }
+
+    .whatsapp-button {
+position: fixed;
+bottom: 20px;
+left: 50px;
+width: 55px;
+height: 55px;
+
+z-index: 999;
+background-color: #00b341;
+color: white;
+padding: 12px;
+border-radius: 100%;
+font-size: 20px;
+cursor: pointer;
+box-shadow: 0px 0px 4px #000;
+animation: resp 1s ease infinite;
+}
+
+@keyframes resp {
+    0%{ box-shadow: 0px 0px 5px #000; }
+    50%{box-shadow: 0px 0px 25px #000;}
+}
+
+.whatsapp-button:hover{
+    animation: none;
+}
+
+.whatsapp-popup {
+position: fixed;
+z-index: 999;
+bottom: 80px;
+left: -300px; /* Cambiamos el valor para que la ventana estÃ© oculta fuera del lado izquierdo */
+width: 300px;
+height: auto;
+background-color: #fff;
+border: 1px solid #ccc;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+opacity: 0;
+transition: opacity 0.3s ease, left 0.3s ease; /* Actualizamos la transiciÃ³n para que se aplique a la propiedad left */
+padding: 20px;
+border-radius: 5px;
+background-color: #00b341;
+
+
+}
+
+.whatsapp-popup.open {
+opacity: 1;
+left: 20px; /* Cambiamos el valor para que la ventana aparezca desde el lado izquierdo */
+}
+
+.whatsapp-popup h2 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.whatsapp-popup p {
+font-size: 16px;
+line-height: 1.5;
+}
+
+.whatsapp-popup .close-button {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+font-size: 18px;
+cursor: pointer;
+}
+
+.text-light{
+    color: #fff;
+}
+
+.whatsapp-popup .send-button {
+display: inline-block;
+padding: 8px 16px;
+background-color: #008000;
+color: white !important;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+margin-right: 10px;
+font-size: 15px;
+}
+
+.whatsapp-popup .input-field {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main-header{
+    margin-top:11px !important ;
+    width: 90% !important;
+}
+
+
+@media (max-width:1022px) {
+    
+
+    .menu-list{
+        background-color: #fff;
+    }
+    .main-header{
+        width: 100% !important;
+        margin-top: 4px !important ;
+    }
+}
+
+
+
+.modal-inicio{
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1001 ;
+
+    animation: modal 2s 4.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0.2);
+	opacity: 0;
+	transition: all .3s ease;
+}
+
+#cerrar{
+    display: none;
+}
+
+#cerrar + label{
+    position: fixed;
+    color: #fff;
+    font-size: 22px;
+    z-index: 1002;
+    background: #092978;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    top: 20px ;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0px 30px #fafafa;
+
+    animation: modal 2s 3s;
+    visibility: hidden;
+    opacity: 0;
+    
+    animation-fill-mode: forwards;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal-inicio{
+    display: none;
+}
+
+.contenido{
+    background-color: #fff;
+    width: 98%;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 22px;
+    min-height: 600px;
+    margin-top: 25px;
+}
+
+
+@keyframes modal {
+    100%{
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+	
+    }
+}
+
+.btn-contactanos{
+    font-size: 20px; 
+    color: #000 !important;
+    border-bottom: 2px solid #000;
+    transition: all .5s;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 22px;
+    box-shadow: 0 0 10px #000;
+    
+}
+.btn-contactanos:hover{
+    border-radius: 22px;
+    background: #092978;
+    color: #fafafa !important;
+    padding: 10px;
+}
+
+@media (max-width:500px) {
+    .contenido{
+        min-height: 500px;
+    }
+    .btn-contactanos{
+        font-size: 17px !important;
+        margin-top: 40 !important;
+
+    }
+}
+
+.actives{
+    padding: 5px;
+    border-radius: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+select option{
+    cursor: pointer !important;
+}
+
+.read-more-btn{
+    cursor: pointer; 
+    background: #dba30b; 
+    color: #fff;  
+    border: 1.5px solid #113897; 
+    box-shadow: -2px 4px 2px #113897, -2px 7px 6px #113897;
+}
+
+.read-more-btn:hover{
+    background: #113897;
+    border-radius: 30px !important;
+    box-shadow: 0px 0px 1px #113897;
+}
+
+/* Estilos base */
+.marquee-slider {
+    /* margin-top: 10px !important; */
+    padding: 100px 0;
+    /* background: linear-gradient(to right, #4B2D1E, #8B4513); */
+    background: linear-gradient(to right, #113897,#3498db, #dba30b);
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    overflow-x: hidden; /* Para prevenir desbordamiento horizontal */
+    transition: all .5s ease-in-out;
+  }
+  
+    
+    .marquee-slider__list {
+      
+    display: flex;
+      /* flex-wrap: nowrap; */
+      gap: 12rem;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin: 1px !important;
+      overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal */
+    }
+    
+    .marquee-slider__list--item {
+      color: #fff;
+      /* width: 1000%; */
+      width: 18%;
+      max-width: 400px;
+      min-height: 260px;
+      border-radius: 0.8rem;
+      flex: none;
+      display: flex;
+      padding: 3rem;
+      position: relative;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+      background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.08));
+      backdrop-filter: blur(10px);
+    }
+    
+    /* Media queries para hacer el diseño responsive */
+    @media (max-width: 1200px) {
+      .marquee-slider__list{
+        margin-left: -150px !important;
+      }
+      .marquee-slider__list--item {
+        width: 12%;
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .marquee-slider__list {
+          width: 160%;
+  
+      }
+      .marquee-slider__list--item {
+        width: 30%;
+        padding: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .marquee-slider__list {
+          width: 265%;
+          gap: 1rem;      
+          margin-left: -200px !important;      
+        }
+  
+        
+      .marquee-slider__list--item {
+        padding: 1rem;
+        /* width: 39%; */
+        width: 100%;
+      }
+    }
+  
+    /* Scrolling con intersectionObserver */
+  
+    .hidden{
+      transform: scale(0.8);
+      opacity: 0;
+      transition: all 1.2s ease-out;
+  }
+  
+  .mostrar{
+    transform: scale(1);
+    opacity: 1;
+  }
+/* Añade estas reglas a tu hoja de estilo (CSS) */
+
+.marquee-slider__list {
+    overflow: hidden;
+  }
+  
+  .marquee-slider__list.marquee-scroll-right {
+    animation: marqueeScrollRight 20s linear infinite;
+  }
+  
+  .marquee-slider__list.marquee-scroll-left {
+    animation: marqueeScrollLeft 20s linear infinite;
+  }
+  
+  @keyframes marqueeScrollRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes marqueeScrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
+  img{
+    border-radius: 12px;
+  }

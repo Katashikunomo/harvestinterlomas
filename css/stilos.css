@@ -1,0 +1,107 @@
+html{
+    scroll-behavior: smooth !important;
+}
+#test{
+    position: fixed;
+    width: 100%;
+    /* max-width: 1200px; */
+    left: 50%;
+    top: 80PX;
+		margin: auto;
+		z-index: 1000;
+    transform: translate(-50%, -50%);
+  }
+  .menu-list li a{
+		color: #000 !important;
+        transition: all 0.4s ease;
+  }
+
+  @media (max-width: 778px) { 
+      #moreinfo{
+        display: none;
+    }
+    .banner{
+        margin-top: 19vh;
+    }
+    #logo{
+        margin-top: 80px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+     
+    #bar,#close{
+        color: #000 !important;
+        width: 20px;
+        height: 20px;
+    }
+    .menu-list {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: right; */
+        /* flex-basis: content; */
+        /* backdrop-filter: blur(10px); */
+    }
+    .nav-wrap{
+        background: #113897;
+        display: flex;
+        flex-direction: column;
+        align-items: center center;
+        justify-content: center;
+        min-height: 10px;
+        /* width: 50px; */
+        /* margin-top: 50px; */
+    }
+    .menu-list li a{
+        color: #000 !important;
+        background: #fff;
+    }
+    .container h1{
+        margin-top: 10px ;
+        font-size: 20px !important ;
+
+    }
+
+}
+
+@media (max-width:1050px) {
+    #test{
+        /* top:1%; */
+        top: 85px;
+    }
+}
+
+/* Clase para radius */
+
+.border_radius{
+    border-radius: 10px !important; 
+}
+.border_radius-cards{
+    box-shadow: 0 0 1px #000 ; border-radius: 10px !important;
+    transition: .5s;
+}
+.border_radius-cards:hover{
+    box-shadow: 1px -2px 18px #000;
+    border-radius: 16px;
+    transition:  0.3s;
+}
+.border_radius-cards a:hover{
+    box-shadow: 0 0 7px #000;
+}
+
+/* Estilos listas header hover */
+.menu-list li a:hover {
+    /* Utiliza transform para especificar la transformación y translate para el desplazamiento vertical */
+    border-radius: 12px ;
+    padding: 6px;
+    border-bottom: 3px solid #fff; /* Reemplaza 'yourColor' con el color que desees */
+
+}
+/* .main-header{
+    height: 70px !important;
+}
+@media (max-width:770px) {
+    .main-header{
+        height: 100% !important;
+    }   
+} */
