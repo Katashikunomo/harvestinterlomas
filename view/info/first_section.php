@@ -58,7 +58,7 @@
 						<br>
 					</div>
 					<div class="card-info-img hidden" >
-						<div class="img-bann-cards" style="background-image: url(images/educacion/Mision.jpg) !important; height: 350px; max-height: 350px; max-width: 350px; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 500px; box-shadow: -1px 5px 10px #000; margin-left: 50px; "></div>
+						<div class="img-bann-cards" style="background-image: url(images/educacion/mision.jpg) !important; height: 350px; max-height: 350px; max-width: 350px; background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 500px; box-shadow: -1px 5px 10px #000; margin-left: 50px; "></div>
 					</div>
 				</div>
 				
