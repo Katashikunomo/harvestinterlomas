@@ -10,7 +10,7 @@ function eventos_fecha()
     $query = "SELECT *,fecha as td_fecha, tb_eventos_h.id as id_ev FROM tb_eventos_h 
     LEFT JOIN encargados ON (id_encargado = encargados.id) 
     WHERE tb_eventos_h.tp_status = 1 
-    ORDER BY td_fecha ASC
+    ORDER BY td_fecha ASC LIMIT 2
     ";
     
     $result = $mysqli->query($query);

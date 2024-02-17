@@ -29,6 +29,17 @@ function eventos_fecha_id($id){
     return $result->fetch_assoc();
 }
 
+function eventos_fecha_totaltes(){
+    global $mysqli;
+    
+    $query = "SELECT *, fecha as td_fecha, tb_eventos_h.id as id_ev FROM tb_eventos_h 
+    LEFT JOIN encargados ON (id_encargado = encargados.id) 
+    WHERE  tp_status = 1";
+    
+    $result = $mysqli->query($query);
+    return $result;
+}
+
 function eventos_fecha_listados($id)
 {
     global $mysqli;
@@ -51,6 +62,7 @@ function eventos_fecha_listados($id)
 
     return $eventos;
 }
+
 
 
 

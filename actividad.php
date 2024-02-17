@@ -2,7 +2,7 @@
 require_once('view/head-foot/header.php');
 include 'include/functions.php';
 
-if(isset($_POST['ideve'])) {
+if(!empty($_POST['ideve'])) {
     $id_evento = $_POST['ideve']; // Asignación directa sin utilizar isset()
     $resultadoev = eventos_fecha_id($id_evento);
 	$titulo = $resultadoev['dt_titulo'];
@@ -10,8 +10,6 @@ if(isset($_POST['ideve'])) {
 	$fehca = $resultadoev['td_fecha'];
 	$hora = $resultadoev['dt_hora'];
 	$resultado_lista_ev = eventos_fecha_listados($id_evento);
-}else{
-	header("Location:index.php");
 }
 ?>
 <style>
@@ -44,7 +42,7 @@ if(isset($_POST['ideve'])) {
 			 <!-- <div id="owl-four-nav" class="owl-nav"></div> -->
 	</div>
 
-	<div class="page-content" style="margin-top:100px" >
+	<div class="page-content" style="margin-top:100px; margin-bottom:100px; " >
 			<div class="container">
 				<div class="grid-container" style="width:auto;" itemscope itemtype=" http://schema.org/Event">
 					
@@ -106,18 +104,8 @@ if(isset($_POST['ideve'])) {
 							
 						</div>
 					</div>
-
 					
-									<!-- 
-				<nav class="navigation pagination">
-					<div class="nav-links">
-						<a href="#" class="page-numbers">Previous</a>
-						<a href="#" class="page-numbers current">1</a>
-						<a href="#" class="page-numbers">2</a>
-						<a href="#" class="page-numbers">3</a>
-						<a href="#" class="page-numbers">Next</a>
-					</div>
-				</nav> -->
+				<!-- Aside con informacion de mas actividades  -->
 				<aside style="width:auto; max-width:340px; margin: 10px auto !important;  margin-top:-50px !important;">
 
 					<!-- New Letter Ends -->
@@ -214,6 +202,6 @@ if(isset($_POST['ideve'])) {
 		</div>
 
 <?php
-// Aqui el header
+// Aqui el footer
 require_once('view/head-foot/footer.php');
 ?>

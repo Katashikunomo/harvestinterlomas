@@ -14,6 +14,12 @@ $resultado = eventos_fecha();
 				<h2 style="border-bottom: 6px solid #113897; width: 100%; color: #113897;">Proximas
 				<br>
 				<b style="color: #dba30b;">Actividades</b></h2>
+				<p style="font-size:16px;">
+					En esta sección se muestran las 2 fechas más proximas, si gustas consultar todas las actividades ingresa a 
+					<a href="eventos.php" type="submit" style="border-radius:12px; box-shadow: 1px 2px 10px #ccc; padding:10px; background:#113897; color: #fff; margin-top: 10px !important; cursor:pointer; ">
+						Eventos	
+					</a>
+				</p>
 			</div>
 		</section>
 		<section class="events-section hidden" itemprop="event" itemscope itemtype=" http://schema.org/Event">
@@ -98,7 +104,7 @@ $resultado = eventos_fecha();
 								<button type="submit" style="border-radius:12px; box-shadow: 1px 2px 10px #ccc; padding:10px; background:#113897; color: #fff; margin-top: 10px !important; cursor:pointer; ">
 									Seguir leyendo...
 								</button>	
-							</form>
+						</form>
 				
 					</div>
 				</div>

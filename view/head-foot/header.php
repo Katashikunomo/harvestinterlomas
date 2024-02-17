@@ -23,6 +23,7 @@
     <script src="jquery.preloader.min.js" type="text/javascript"></script>
    
     <title>Harvest Christian School Interlomas</title>
+    <link rel="shortcut icon" href="img/logoharvest.jpg" type="image/x-icon">
 </head>
 <body>
 
@@ -115,11 +116,12 @@
 								<?php
 								$indexClass = (isset($_REQUEST['index']) && $_REQUEST['index'] == '1') ? 'actives' : '';
 								$contactClass = (isset($_REQUEST['contacto']) && $_REQUEST['contacto'] == '2') ? 'actives' : '';
+								$eventClass = (isset($_REQUEST['evento']) && $_REQUEST['evento'] == '3') ? 'actives' : '';
 								?>
 								<li><a class="<?= $indexClass ?>" href="index.php?index=1" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Inicio</a></li>
 								<li><a class="<?= (isset($_REQUEST['element1'])) ? 'actives' : '' ?>" href="#" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Programas Académicos</a></li>
-								<li><a class="<?= (isset($_REQUEST['element2'])) ? 'actives' : '' ?>" href="#" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Eventos</a></li>
-								<li><a class="<?= $contactClass ?>" href="contacto.php?contacto=2" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Contacto</a></li>
+								<li><a class="<?= $eventClass; ?>" href="eventos.php?evento=3" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Eventos</a></li>
+								<li><a class="<?= $contactClass; ?>" href="contacto.php?contacto=2" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Contacto</a></li>
 							</ul>
 						</nav>
 
