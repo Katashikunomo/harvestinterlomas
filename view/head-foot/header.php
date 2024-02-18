@@ -24,6 +24,15 @@
    
     <title>Harvest Christian School Interlomas</title>
     <link rel="shortcut icon" href="img/logoharvest.jpg" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N21601WSD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5N21601WSD');
+</script>
 </head>
 <body>
 
