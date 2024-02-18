@@ -61,3 +61,18 @@
 				</div>
 			</div>
 		</div>
+		<?php
+		$numero = random_int(1, 31102);
+		$versiculo_array = get_versiculo($numero); 
+		$versiculo_text = $versiculo_array['texto'];
+		$versiculo_book = $versiculo_array['name'];
+		$versiculo_chapter = $versiculo_array['chapter'];
+		$versiculo_verse = $versiculo_array['verse'];
+		?>
+		<div class="container">
+			<div class="card-body">
+                <h1 class="card-title mt-5"><?=$versiculo_text;?></h1>
+                <!-- <h3 class="card-title">En el principio creó Dios los cielos y la tierra.</h3> -->
+                <h2 class="card-text"><?=$versiculo_book;?> <?=$versiculo_chapter;?>:<?=$versiculo_verse;?> </h2>
+              </div> 
+		</div>

@@ -66,3 +66,9 @@ function eventos_fecha_listados($id)
 
 
 
+function get_versiculo($numero){
+    global $mysqli;
+    $query = "SELECT *, REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(text, '{', ''), '}', ''), '\\\', ''),'\\\i',''),'\cf6','') AS texto FROM bible_verses LEFT JOIN bible_books ON (bible_books.idBook = bible_verses.idBook) WHERE idVerse = '$numero'";
+    $result = $mysqli->query($query);
+    return $result->fetch_assoc();    
+}
