@@ -54,7 +54,7 @@ $resultadoev = eventos_fecha_totaltes();
 						$directorio_externo = 'https://avivamientointernacional.website/admin/img/harvest/calendario/';
 
 						// Nombre de la imagen por defecto
-						$imagen_por_defecto = 'images/educacion/evento-1.webp';
+						$imagen_por_defecto = 'images/educacion/evento-1.jpg';
 
 						// Nombre de la imagen obtenido de alguna fuente, supongamos $value['nom_imagen']
 						$imagen_obtenida = $values['nom_imagen'];

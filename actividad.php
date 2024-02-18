@@ -24,6 +24,33 @@ if(!empty($_POST['ideve'])) {
 		justify-content:center;
 		
 	}
+	.page-content .container .grid-container {
+    margin: auto;
+    }
+    .grid-box-wrap{
+        transition:all linear .3s;
+        /* box-shadow:0px 0px 4px #000; */
+        border-radius:22px !important;
+    }
+    .grid-box-wrap .grid-body{
+        transition:all linear .3s;
+		position: relative;
+        box-shadow:0px 0px 4px #000;
+        border-radius:22px !important;
+		margin-top:-20px;
+		z-index: 99;
+		background: #fff;
+    }
+    .grid-box-wrap .grid-body:hover{
+        border-radius:22px !important;
+        box-shadow:1px 4px 10px #0007;
+    }
+
+    .grid-box-wrap .grid-img img{
+        box-shadow:0px 0px 4px #0007;
+        border-radius:22px;
+		z-index: -1;
+    }
 </style>
 		<!-- Header Close -->
 		<div class="parallax" style=" height: 100vh;" >
@@ -54,7 +81,7 @@ if(!empty($_POST['ideve'])) {
 						$directorio_externo = 'https://avivamientointernacional.website/admin/img/harvest/calendario/';
 
 						// Nombre de la imagen por defecto
-						$imagen_por_defecto = 'images/educacion/evento-1.webp';
+						$imagen_por_defecto = 'images/educacion/evento-1.jpg';
 
 						// Nombre de la imagen obtenido de alguna fuente, supongamos $value['nom_imagen']
 						$imagen_obtenida = $resultadoev['nom_imagen'];

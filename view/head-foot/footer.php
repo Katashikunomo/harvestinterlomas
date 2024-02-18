@@ -7,8 +7,8 @@
 						</header>
 						<p></p>
 
-						<h4><a href="tel:+525512345678"><i class="fas fa-phone"></i> 5512345678</a></h4>
-						<h4><a href="mailto:info@harvestinterlomas.com"><i class="fas fa-envelope"></i> info@harvestinterlomas.org</a></h4>
+						<h4><a href="tel:+525550425171"><i class="fas fa-phone"></i> 5550425171 </a></h4>
+						<h4><a href="mailto:info@harvestinterlomas.com"><i class="fas fa-envelope"></i> info@harvestinterlomas.com</a></h4>
 						<h4><a href="https://maps.app.goo.gl/ntY5LoFCE8MKQM9T6" target="_blank"><i class="fas fa-map-marker-alt"></i>Av. Jesús del Monte 269, Jesus del Monte, 52763 Estado de México, Méx.</a></h4>
 					</div>
 
@@ -18,8 +18,9 @@
 						</header>
 						<ul>
 							<li><a href="#">Programas Academicos</a></li>
+							<li><a href="eventos.php?evento=3">Eventos</a></li>
 							<!-- <li><a href="#">Blog</a></li> -->
-							<li><a href="#">Avivamiento Internacional</a></li>
+							<li><a href="https://avivamientointernacional.website" target="_blank">Avivamiento Internacional</a></li>
 							<li><a href="#">Proceso de Inscripción</a></li>
 							<!-- <li><a href="#">Courses</a></li>
 							<li><a href="#">Courses</a></li> -->
@@ -29,7 +30,7 @@
 					<div class="box-wrap">
 						<header>
 							<h2>Recibe información</h2>
-							<p>Si quieres recibir información más detallada a la brevedad ingresa tu correo, si tienes dudas especificas <a href="contacto.php" style="border: 1px solid #000; border-radius: 7px; background: #dba30b; color: #fff; padding: 2px;">contactanos</a></p>
+							<p>Si quieres recibir información más detallada a la brevedad ingresa tu correo, si tienes dudas especificas <a href="contacto.php" style="border: 1px solid #000; border-radius: 7px; background: #dba30b; color: #fff; padding: 2px;">contáctanos</a></p>
 						</header>
 						<section class="quick-contact" >
 							<form action="" >
@@ -49,10 +50,14 @@
 				<div class="container">
 					<hr class="footer-line">
 					<ul class="social-list">
+						<li></li>
+						<li></li>
+						<li></li>
 						<li><a href="https://www.facebook.com/profile.php?id=100086799152343" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#" onclick="clearWhatsAppMessage()"><i class="fab fa-whatsapp"></i></a></li>
 						<!-- <li><a href=""><i class="fab fa-twitter"></i></a></li> -->
-						<li><a href=""><i class="fab fa-youtube"></i></a></li>
-						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+						<!-- <li><a href=""><i class="fab fa-youtube"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li> -->
 					</ul>
 					<hr class="footer-line">
 				</div>

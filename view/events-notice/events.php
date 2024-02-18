@@ -11,7 +11,7 @@ $resultado = eventos_fecha();
 </style>
 <section class="page-heading hidden">
 			<div class="container ">
-				<h2 style="border-bottom: 6px solid #113897; width: 100%; color: #113897;">Proximas
+				<h2 style="border-bottom: 6px solid #113897; width: 100%; color: #113897;">Próximas
 				<br>
 				<b style="color: #dba30b;">Actividades</b></h2>
 				<p style="font-size:16px;">

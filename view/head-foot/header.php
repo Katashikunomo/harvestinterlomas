@@ -48,7 +48,7 @@
             </div>
             <h2 class="text-center">¡INSCRIPCIONES ABIERTAS!</h2>
             <br>
-            <a href="contacto.php" class="btn-contactanos" style="padding-bottom: 10px !important;">contactanos para obtener información</a>
+            <a href="contacto.php" class="btn-contactanos" style="padding-bottom: 10px !important;">contáctanos para obtener información</a>
         </div>
     </div>
     <div class="whatsapp-button" onclick="toggleWhatsAppPopup()">
@@ -76,22 +76,22 @@
     
     <div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
         <header class="site-header">
-            <div class="top-header" style="margin-top:-10px;">
+            <div class="top-header" style="margin-top:-10px; font-size:14px;">
                 <div class="container" id="moreinfo">
                     <div class="top-header-left">
                         <div class="top-header-block">
-                            <a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@harvestinterlomas.org</a>
+                            <a href="mailto:info@harvestinterlomas.com" itemprop="email"><i class="fas fa-envelope"></i> info@harvestinterlomas.com</a>
                         </div>
                         <div class="top-header-block">
-                            <a href="tel:+525587970070" itemprop="telephone"><i class="fas fa-phone"></i> 55 8797 0070</a>
+                            <a href="tel:+525550425171" itemprop="telephone"><i class="fas fa-phone"></i> 55 5042 5171</a>
                         </div>
                     </div>
                     <div class="top-header-right">
                         <div class="social-block">
                             <ul class="social-list">
-                                <li><a href="your-whatsapp-url"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="your-facebook-url"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="your-twitter-url"><i class="fab fa-twitter"></i></a></li>
+                                <!-- <li><a href="5550425171"><i class="fab fa-whatsapp"></i></a></li> -->
+                                <li><a href="https://www.facebook.com/profile.php?id=100086799152343"><i class="fab fa-facebook-square"></i></a></li>
+                                <!-- <li><a href="your-twitter-url"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
                         </div>
                     </div>
