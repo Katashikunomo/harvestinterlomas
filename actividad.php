@@ -2,7 +2,7 @@
 require_once('view/head-foot/header.php');
 include 'include/functions.php';
 
-if(!empty($_POST['ideve'])) {
+if(isset($_POST['ideve'])) {
     $id_evento = $_POST['ideve']; // Asignación directa sin utilizar isset()
     $resultadoev = eventos_fecha_id($id_evento);
 	$titulo = $resultadoev['dt_titulo'];
