@@ -91,10 +91,10 @@ require_once('view/head-foot/header.php');
 							Harvest Christian School Interloas agradece tu interes, comunicate con nosotros y nos pondremos en contacto contigo a la brevedad ! <b style="color: #B00000; font-size: 30px;"> ♥ </b>
 						</b>
 					</p>
-					<form id="formulario" action="include/validacion-contacto.php" method="POST">
+					<form id="formulario" name="formulario" action="include/validacion-contacto.php" method="POST">
 						<span>
-							<input type="text" placeholder="Nombre *" class="input-name" required>
-							<input type="email" placeholder="Email *" class="input-email" required>
+							<input type="text" id="nombre" name="nombre" placeholder="Nombre *" class="input-name" required>
+							<input type="email" id="email" name="email" placeholder="Email *" class="input-email" required>
 						</span>
 						<select name="asunto" id="asunto" class="input-subject" style="cursor: pointer;" required>
 							<option value="" selected disabled>Selecciona el Asunto*: </option>
@@ -103,22 +103,22 @@ require_once('view/head-foot/header.php');
 							<option value="otro">Otro</option>
 						</select>
 						<div id="campos-adicionales" class="hidden-form">
-							<input type="text" id="nombre-tutor" placeholder="Nombre del Tutor" class="input-nombre-tutor">
-							<select id="relacion" class="input-relacion">
+							<input type="text" id="nombre-tutor" name="nombre-tutor" placeholder="Nombre del Tutor" class="input-nombre-tutor">
+							<select id="relacion" name="relacion" class="input-relacion">
 								<option value="" selected disabled>Relación con el Estudiante*: </option>
 								<option value="mama">Mamá</option>
 								<option value="papa">Papá</option>
 								<option value="tutor">Tutor</option>
 							</select>
 							<h3><b>Datos del Aca</b></h3>
-							<select id="nivel-academico" class="input-nivel-academico">
+							<select id="nivel-academico" name="nivel-academico" class="input-nivel-academico">
 								<option value="" selected disabled>Nivel Académico*: </option>
 								<option value="preescolar">Preescolar</option>
 								<option value="primaria">Primaria</option>
 								<option value="secundaria">Secundaria</option>
 								<option value="bachillerato">Bachillerato</option>
 							</select>
-							<select id="genero" class="input-genero">
+							<select id="genero" name="genero" class="input-genero">
 								<option value="" selected disabled>Género*: </option>
 								<option value="nino">Niño</option>
 								<option value="nina">Niña</option>
@@ -132,7 +132,7 @@ require_once('view/head-foot/header.php');
 								?>
 							</select>
 						</div>
-						<textarea placeholder="Mensaje*" class="input-mensaje"></textarea>
+						<textarea id="mensaje" name="mensaje" placeholder="Mensaje*" class="input-mensaje"></textarea>
 						<input type="submit" style="border-radius: 12px; background: #f5951f;" value="Contactar">
 						<p>Al enviar este formulario autorizo el uso de mi dirección de correo electrónico y otorgo mi consentimiento para la utilización de mis datos.</p>
 					</form>

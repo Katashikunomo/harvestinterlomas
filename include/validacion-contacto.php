@@ -7,9 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Si el asunto es "Inscripción", obtener los valores adicionales
     if ($asunto == "inscripcion") {
-        $nombreTutor = $_POST['nombre_tutor'];
+        $nombreTutor = $_POST['nombre-tutor'];
         $relacion = $_POST['relacion'];
-        $nivelAcademico = $_POST['nivel_academico'];
+        $nivelAcademico = $_POST['nivel-academico'];
         $genero = $_POST['genero'];
         $edad = $_POST['edad'];
         $mensaje .= "\n\nDatos de inscripción:\nNombre del tutor: $nombreTutor\nRelación: $relacion\nNivel Académico: $nivelAcademico\nGénero: $genero\nEdad: $edad años";
