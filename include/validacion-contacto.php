@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $numero = $_POST['numero'];
     $email = $_POST['email'];
-    $asunto = $_POST['asunto'];
+    $asunto = mysqli_real_escape_string($mysqli, $_POST['asunto']);
     $mensaje = $_POST['mensaje'];
     $nombreTutor = 'sin registro';
     $relacion = 'sin registro';
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensaje .= "\n\nDatos de inscripción:\nNombre del tutor: $nombreTutor\nRelación: $relacion\nNivel Académico: $nivelAcademico\nGénero: $genero\nEdad: $edad años";
     }
 
-    $sql = "INSERT INTO registro_correos_h (dt_nombre,dt_numero,dt_email,dt_nombre_t,dt_relacion,dt_nivel,dt_genero,dt_edad,dt_mensaje) values('{$nombre}','{$numero}','{$email}', '{$nombreTutor}','{$relacion}','{$nivelAcademico}','{$genero}','{$edad}','{$mensaje}') ";
+    $sql = "INSERT INTO registro_correos_h (dt_nombre,dt_numero,dt_email,dt_nombre_t,dt_relacion,dt_nivel,dt_genero,dt_edad,dt_mensaje,dt_asunto) values('{$nombre}','{$numero}','{$email}', '{$nombreTutor}','{$relacion}','{$nivelAcademico}','{$genero}','{$edad}','{$mensaje}','{$asunto}')";
     $mysqli->query($sql);
     // Configurar el destinatario y el asunto del correo
     $destinatario = "info@harvestinterlomas.com, malfatapia1@gmail.com";
