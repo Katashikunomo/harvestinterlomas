@@ -34,7 +34,7 @@
 						</header>
 						<section class="quick-contact" >
 							<form action="" >
-							<h2>Ingresa tu correo para recibir información</h2>
+							<h2 style="color:#000 !important;">Ingresa tu correo para recibir información</h2>
 								<input style="background: #fff !important; margin-bottom: 10px;" type="email" name="email" placeholder="Ingresa tu correo*" required>
 								<!-- <textarea placeholder="Mensaje del correo*" style="background: #fff !important; color: #000;" required></textarea> -->
 								<!-- <button type="submit" style="background: #f5951f !important ; color: #fff;">Enviar mensaje</button> -->

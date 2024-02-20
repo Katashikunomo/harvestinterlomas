@@ -26,6 +26,7 @@ require_once('view/head-foot/header.php');
 
     input[type="text"],
     input[type="email"],
+	input[type="number"],
     textarea,
     select {
         width: 100%;
@@ -95,6 +96,7 @@ require_once('view/head-foot/header.php');
 						<span>
 							<input type="text" id="nombre" name="nombre" placeholder="Nombre *" class="input-name" required>
 							<input type="email" id="email" name="email" placeholder="Email *" class="input-email" required>
+							<input type="text" id="numero" name="numero" placeholder="Teléfono de contacto(a 10 digitos) *" pattern="\d{10}" maxlength="10" class="input-email" required>
 						</span>
 						<select name="asunto" id="asunto" class="input-subject" style="cursor: pointer;" required>
 							<option value="" selected disabled>Selecciona el Asunto*: </option>
@@ -120,8 +122,8 @@ require_once('view/head-foot/header.php');
 							</select>
 							<select id="genero" name="genero" class="input-genero">
 								<option value="" selected disabled>Género*: </option>
-								<option value="nino">Niño</option>
-								<option value="nina">Niña</option>
+								<option value="masculino">Masculino</option>
+								<option value="femenino">Femenino</option>
 							</select>
 							<select id="edad" name="edad" class="input-edad">
 								<option value="" selected disabled>Edad*: </option>
