@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail("malfatapia1@gmail.com", "Solicitud de información desde la página web", $mensajeAdicional);
 
     // Redirigir a una página de éxito
-    header("Location: ../contacto.php");
+    header("Location: ../contacto.php?registrado");
     exit();
 }
 ?>

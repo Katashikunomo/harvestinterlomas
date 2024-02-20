@@ -1,7 +1,12 @@
 <?php
 // Aqui el header
 require_once('view/head-foot/header.php');
+
 ?>
+<!-- SweetAlert2 CSS y JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <style>
 	.parallax{
 		background-image: url(images/educacion/contacto.png);
@@ -55,6 +60,11 @@ require_once('view/head-foot/header.php');
     .hidden-form {
         display: none;
     }
+	.btn-custom-color {
+    background-color: #113897 !important;
+    border-color: #113897 !important;
+    color: white !important; /* Color del texto */	
+	}	
 </style>
 		<!-- Header Close -->
 		<div class="parallax" style=" height: 100vh;" >
@@ -81,7 +91,28 @@ require_once('view/head-foot/header.php');
 			 <!-- <div id="owl-four-nav" class="owl-nav"></div> -->
 	</div>
 
-		
+		<?php if(isset($_REQUEST['registrado'])){ ?>
+			<script>
+			// Suponiendo que recibes la confirmación de registro en una variable llamada 'registroCorrecto'
+			let registroCorrecto = true; // Cambia a false si no se ha registrado correctamente
+
+			if (registroCorrecto) {
+				setTimeout(function() {
+					Swal.fire({
+						icon: 'success',
+						title: '¡Registro exitoso!',
+						text: 'Tu registro se realizo correctamente...',
+						confirmButtonText: 'Cerrar',
+						customClass: {
+										confirmButton: 'btn btn-primary btn-custom-color'
+									}
+					});
+				}, 2500); // Retraso de 2 segundos (2000 milisegundos)
+			}
+			</script>
+		<?php } ?>
+
+
 
         <section class="contact-page-section">
 			<div class="container hidden " >
