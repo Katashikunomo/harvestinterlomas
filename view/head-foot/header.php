@@ -126,9 +126,10 @@
 								$indexClass = (isset($_REQUEST['index']) && $_REQUEST['index'] == '1') ? 'actives' : '';
 								$contactClass = (isset($_REQUEST['contacto']) && $_REQUEST['contacto'] == '2') ? 'actives' : '';
 								$eventClass = (isset($_REQUEST['evento']) && $_REQUEST['evento'] == '3') ? 'actives' : '';
+								$programClass = (isset($_REQUEST['programas']) && $_REQUEST['programas'] == '4') ? 'actives' : '';
 								?>
-								<li><a class="<?= $indexClass ?>" href="index.php?index=1" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Inicio</a></li>
-								<li><a class="<?= (isset($_REQUEST['element1'])) ? 'actives' : '' ?>" href="#" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Programas Académicos</a></li>
+								<li><a class="<?= $indexClass; ?>" href="index.php?index=1" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Inicio</a></li>
+								<li><a class="<?= $programClass; ?>" href="programas.php?programas=4" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Programas Académicos</a></li>
 								<li><a class="<?= $eventClass; ?>" href="eventos.php?evento=3" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Eventos</a></li>
 								<li><a class="<?= $contactClass; ?>" href="contacto.php?contacto=2" style="color: #fff !important; background:none; font-weight:normal; font-size:15px; padding:15px !important;">Contacto</a></li>
 							</ul>

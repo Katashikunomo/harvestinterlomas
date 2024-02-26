@@ -90,5 +90,7 @@
     <!-- Se agregan algunas adaptaciones al plugion -->
     <script src="js/agregations/plugin-carousel.js"></script>
 	<script src="jquery.preloader.min.js"></script>
+	<!-- Animaciones programas -->
+	<script src="js/animaciones.js"></script>
 </body>
 </html>
