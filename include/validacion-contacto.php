@@ -1,6 +1,19 @@
 <?php
 include '../controller/conexion.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $valida_asunto = isset($_POST['asunto']) ? $_POST['asunto'] : false;
+    $valida_nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
+    $valida_numero = isset($_POST['numero']) ? $_POST['numero'] : false;
+    $valida_email = isset($_POST['email']) ? $_POST['email'] : false;
+    $valida_mensaje = isset($_POST['mensaje']) ? $_POST['mensaje'] : false;
+
+    if (empty($valida_asunto) || empty($valida_nombre) || empty($valida_numero) || empty($valida_email) || empty($valida_mensaje)) {
+        header('Location:../contacto.php?datosvacios');
+        die();
+    }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $numero = $_POST['numero'];
     $email = $_POST['email'];

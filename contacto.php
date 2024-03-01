@@ -112,6 +112,27 @@ require_once('view/head-foot/header.php');
 			</script>
 		<?php } ?>
 
+		<?php if(isset($_REQUEST['datosvacios'])){ ?>
+			<script>
+			// Suponiendo que recibes la confirmación de registro en una variable llamada 'registroCorrecto'
+			let registroCorrecto = true; // Cambia a false si no se ha registrado correctamente
+
+			if (registroCorrecto) {
+				setTimeout(function() {
+					Swal.fire({
+						icon: 'error',
+						title: 'Valida tus datos!',
+						text: 'Llena todos los datos correctamente...',
+						confirmButtonText: 'Cerrar',
+						customClass: {
+										confirmButton: 'btn btn-primary btn-custom-color'
+									}
+					});
+				}, 2500); // Retraso de 2 segundos (2000 milisegundos)
+			}
+			</script>
+		<?php } ?>
+
 
 
         <section class="contact-page-section">
@@ -131,9 +152,9 @@ require_once('view/head-foot/header.php');
 						</span>
 						<select name="asunto" id="asunto" class="input-subject" style="cursor: pointer;" required>
 							<option value="" selected disabled>Selecciona el Asunto*: </option>
-							<option value="info">Solicitar información</option>
+							<!-- <option value="info">Solicitar información</option> -->
 							<option value="inscripcion">Inscripción</option>
-							<option value="otro">Otro</option>
+							<!-- <option value="otro">Otro</option> -->
 						</select>
 						<div id="campos-adicionales" class="hidden-form">
 							<input type="text" id="nombre-tutor" name="nombre-tutor" placeholder="Nombre del Tutor" class="input-nombre-tutor">
@@ -143,7 +164,7 @@ require_once('view/head-foot/header.php');
 								<option value="papa">Papá</option>
 								<option value="tutor">Tutor</option>
 							</select>
-							<h3><b>Datos del Aca</b></h3>
+							<h3><b>Datos Academicos</b></h3>
 							<select id="nivel-academico" name="nivel-academico" class="input-nivel-academico">
 								<option value="" selected disabled>Nivel Académico*: </option>
 								<option value="preescolar">Preescolar</option>
