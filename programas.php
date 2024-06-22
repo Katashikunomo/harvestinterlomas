@@ -104,6 +104,14 @@
     th{
         font-size: 13px;
     }
+
+    .boton--secundario{
+        color:#fff !important;
+    }
+
+    .boton--secundario:hover{
+        color:#000 !important;
+    }
 </style>
 
 
