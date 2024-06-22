@@ -222,7 +222,7 @@ require_once('view/head-foot/header.php');
 						</li>
 						<li><i style="color: #113897;" class="fas fa-phone"></i>
 							<span> 
-								<p>Telefono de contacto: <a  href="tel:+525576624750">5576624750</a></p>
+								<p>Telefono de contacto: <a  href="tel:+525550425171">5550425171</a></p>
 							</span>
 						</li>
 						<li><i style="color: #113897;" class="fas fa-envelope"></i>
