@@ -13,10 +13,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $numero = $_POST['numero'];
     $email = $_POST['email'];
+    // Convertimos a minúsculas para la comparación
+    $nombreLower = strtolower($nombre);
+    $emailLower = strtolower($email);
+
+    // Validar nombre
+    if (strpos($nombreLower, 'amanda') !== false) {
+        header("Location: ../contacto.php?false");
+        die("El nombre contiene la cadena 'amanda'.");
+        // Redirigir a una página de éxito
+    }
+
+    // Validar email
+    if (strpos($emailLower, 'amanda') !== false) {
+        header("Location: ../contacto.php?false");
+        die("El email contiene la cadena 'amanda'.");
+    }
+
+    // Validar número: solo permitir dígitos
+    if (!ctype_digit($numero)) {
+        header("Location: ../contacto.php?false");
+        die("El número debe contener solo caracteres numéricos.");
+
+    }
+
     $asunto = mysqli_real_escape_string($mysqli, $_POST['asunto']);
     $mensaje = $_POST['mensaje'];
     $nombreTutor = 'sin registro';
